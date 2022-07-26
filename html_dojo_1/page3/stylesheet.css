@@ -1,0 +1,69 @@
+body {
+  font-family: "Avenir Next";
+  margin:0px;
+}
+
+li {
+  list-style: none;
+  float: left;
+  padding:33px 20px;
+  font-size:19px;
+}
+
+.header {
+  background-color: #26d0c9;
+  color: #fff;
+  height: 80px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+}
+
+.main{
+  padding: 0px 80px;
+}
+.container h1{
+  margin-bottom:-60px;
+  font-size:140px;
+}
+.container span{
+  color:red;
+}
+
+.container h2{
+  font-size:60px;
+}
+
+.contents {
+  height: 500px;
+  margin-top:100px;
+}
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  /* Change the font-size to 28px */
+  font-size:28px;
+  
+  /* Change the padding-bottom property to 15px */
+  padding-bottom:15px;
+  
+  /* Change the margin-bottom property to 50px */
+  margin-bottom:50px;
+  
+}
+
+.contents-item {
+  float: left;
+  /* Change the margin-right property to 40px */
+  margin-right:30px;
+  
+}
+
+/* Change the font-size and margin-top of <p> tags within contents-item */
+.contents-item p{
+ font-size:24px;
+ margin-top:30px;
+}
