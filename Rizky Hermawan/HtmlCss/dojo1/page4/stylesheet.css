@@ -1,19 +1,8 @@
 /* Reset CSS (JANGAN DIHAPUS) */
-html,
-body,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-form,
-input,
-div {
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
   margin: 0;
   padding: 0;
 }
@@ -28,21 +17,21 @@ li {
 
 /* Ketik code Anda di bawah */
 header {
-  background-color: #26d0c9;
-  color: #fff;
-  height: 90px;
+      background-color: #26d0c9;
+    color: #fff;
+    height: 90px;
 }
 
 .header-logo {
-  float: left;
-  font-size: 36px;
-  padding: 20px 40px;
-  font-weight: normal;
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+    font-weight:normal;
 }
 
 .header-list li {
-  float: left;
-  padding: 33px 20px;
+    float: left;
+    padding: 33px 20px;
 }
 
 .main {
@@ -87,8 +76,7 @@ header {
   padding-top: 100px;
 }
 
-input,
-textarea {
+input, textarea {
   width: 400px;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -100,24 +88,4 @@ textarea {
 .contact-submit {
   background-color: #dee7ec;
   color: #889eab;
-}
-
-.footer {
-  background-color: #2f5167;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
-}
-
-.footer-logo {
-  float: left;
-  font-size: 32px;
-}
-
-.footer-list {
-  float: right;
-}
-
-.footer-list li {
-  padding-bottom: 20px;
 }
