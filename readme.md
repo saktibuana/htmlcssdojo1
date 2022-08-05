@@ -1,5 +1,5 @@
 # Kelas Ruby on Rails Progate x Digital Talent Scholarship Professional Academy Batch 3
-### Class Video
+### Class Videos
 #### Pertemuan :one: HTML CSS Study 1 :arrow_right:  https://youtu.be/-SYPcpgSvfs
 #### Pertemuan :two: HTML CSS Study 2 :arrow_right: https://youtu.be/P0m_GXaIUEU
 #### Pertemuan :three: HTML CSS Dojo 1 :arrow_right: https://youtu.be/o0a6-a2CNO8
