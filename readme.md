@@ -1,4 +1,6 @@
-# Kelas Ruby on Rails Progate x Digital Talent Scholarship Professional Academy Batch 3
+# Kelas Ruby on Rails dari Digital Talent Scholarship Professional Academy Batch 3
+Platform: Progate
+
 ### Class Videos
 #### Pertemuan :one: HTML CSS Study 1 :arrow_right:  https://youtu.be/-SYPcpgSvfs
 #### Pertemuan :two: HTML CSS Study 2 :arrow_right: https://youtu.be/P0m_GXaIUEU
