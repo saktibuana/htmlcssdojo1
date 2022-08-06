@@ -24,14 +24,14 @@ Platform: Progate
 
 ##### 見てくれてありがとう！
 
-[HTML CSS Study 1]: https://youtu.be/-SYPcpgSvfs HTML CSS Study 1
-[HTML CSS Study 2]: https://youtu.be/P0m_GXaIUEU HTML CSS Study 2
-[HTML CSS Dojo 1]: https://youtu.be/o0a6-a2CNO8 Html CSS Dojo 1
-[4]: https://youtu.be/j-xPsutXW2c Ruby Study 1 & 2
-[5]: https://youtu.be/AwZLflZSfe8 Ruby Study 3 & 4
-[6]: https://youtu.be/7ZAVrtolRB0 Ruby Study 5 & Rails Study 1
-[7]: https://youtu.be/vXmWLOc4gDo Rails Study 2 & 3
-[8]: https://youtu.be/Ubrhk2CQL5s Rails Dojo 1 & Rails Study 4
-[9]: https://youtu.be/di2cLwKHjys Rails Study 5 & Rails Dojo 2
-[10]: https://youtu.be/EGn1EIZOu70 Rails Study 6 & 7
-[11]: https://youtu.be/0dZMkELXbEY Rails Study 8
+[HTML CSS Study 1]: https://youtu.be/-SYPcpgSvfs
+[HTML CSS Study 2]: https://youtu.be/P0m_GXaIUEU
+[HTML CSS Dojo 1]: https://youtu.be/o0a6-a2CNO8
+[Ruby Study 1 & 2]: https://youtu.be/j-xPsutXW2c
+[Ruby Study 3 & 4]: https://youtu.be/AwZLflZSfe8
+[Ruby Study 5 & Rails Study 1]: https://youtu.be/7ZAVrtolRB0
+[Rails Study 2 & 3]: https://youtu.be/vXmWLOc4gDo
+[Rails Dojo 1 & Rails Study 4]: https://youtu.be/Ubrhk2CQL5s 
+[Rails Study 5 & Rails Dojo 2]: https://youtu.be/di2cLwKHjys 
+[Rails Study 6 & 7]: https://youtu.be/EGn1EIZOu70 
+[Rails Study 8]: https://youtu.be/0dZMkELXbEY 
