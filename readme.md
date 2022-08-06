@@ -1,5 +1,5 @@
 # Kelas Ruby on Rails dari Digital Talent Scholarship Professional Academy Batch 3
-Platform: Progate
+Platform: [Progate](http://progate.com)
 
 ### Class Videos
 #### Pertemuan :one: :arrow_right: [HTML CSS Study 1]
