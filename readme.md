@@ -24,4 +24,14 @@ Platform: Progate
 
 ##### 見てくれてありがとう！
 
-[1] https://youtu.be/-SYPcpgSvfs
+[1]: https://youtu.be/-SYPcpgSvfs Title
+[2]: https://youtu.be/P0m_GXaIUEU
+[3]: https://youtu.be/o0a6-a2CNO8
+[4]: https://youtu.be/j-xPsutXW2c
+[5]: https://youtu.be/AwZLflZSfe8
+[6]: https://youtu.be/7ZAVrtolRB0
+[7]: https://youtu.be/vXmWLOc4gDo
+[8]: https://youtu.be/Ubrhk2CQL5s
+[9]: https://youtu.be/di2cLwKHjys
+[10]: https://youtu.be/EGn1EIZOu70
+[11]: https://youtu.be/0dZMkELXbEY
