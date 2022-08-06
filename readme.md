@@ -2,8 +2,8 @@
 Platform: Progate
 
 ### Class Videos
-#### Pertemuan :one: :arrow_right: [HTML CSS Study 1][1]
-#### Pertemuan :two: :arrow_right: [HTML CSS Study 2][2]
+#### Pertemuan :one: :arrow_right: [HTML CSS Study 1]
+#### Pertemuan :two: :arrow_right: [HTML CSS Study 2]
 #### Pertemuan :three: HTML CSS Dojo 1 :arrow_right: https://youtu.be/o0a6-a2CNO8
 #### Pertemuan :four: Ruby 1 dan 2 :arrow_right: https://youtu.be/j-xPsutXW2c
 #### Pertemuan :five: Ruby 3 dan 4 :arrow_right: https://youtu.be/AwZLflZSfe8
@@ -24,9 +24,9 @@ Platform: Progate
 
 ##### 見てくれてありがとう！
 
-[1]: https://youtu.be/-SYPcpgSvfs HTML CSS Study 1
-[2]: https://youtu.be/P0m_GXaIUEU HTML CSS Study 2
-[3]: https://youtu.be/o0a6-a2CNO8 Html CSS Dojo 1
+[HTML CSS Study 1]: https://youtu.be/-SYPcpgSvfs HTML CSS Study 1
+[HTML CSS Study 2]: https://youtu.be/P0m_GXaIUEU HTML CSS Study 2
+[HTML CSS Dojo 1]: https://youtu.be/o0a6-a2CNO8 Html CSS Dojo 1
 [4]: https://youtu.be/j-xPsutXW2c Ruby Study 1 & 2
 [5]: https://youtu.be/AwZLflZSfe8 Ruby Study 3 & 4
 [6]: https://youtu.be/7ZAVrtolRB0 Ruby Study 5 & Rails Study 1
