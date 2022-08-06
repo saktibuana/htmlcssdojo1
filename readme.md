@@ -4,19 +4,19 @@ Platform: [Progate](http://progate.com)
 ### Class Videos
 #### Pertemuan 1️⃣ ➡ [HTML CSS Study 1]
 #### Pertemuan 2️⃣ ➡ [HTML CSS Study 2]
-#### Pertemuan 3️⃣ ➡ [HTML CSS Dojo 1](https://youtu.be/o0a6-a2CNO8)
+#### Pertemuan 3️⃣ ➡ [HTML CSS Dojo 1]
 #### Pertemuan 4️⃣ ➡ [Ruby Study 1 & 2]
 #### Pertemuan 5️⃣ ➡ [Ruby Study 3 & 4]
 #### Pertemuan 6️⃣ ➡ [Ruby Study 5 & Rails Study 1]
-#### Pertemuan 7️⃣ ➡ [Rails Study 2 & 3]:
+#### Pertemuan 7️⃣ ➡ [Rails Study 2 & 3]
 #### Pertemuan 8️⃣ ➡ [Rails Dojo 1 & Rails Study 4]
 #### Pertemuan 9️⃣ ➡ [Rails Study 5 & Rails Dojo 2]
 #### Pertemuan 1️⃣0️⃣ ➡ [Rails Study 6 & 7]
 #### Pertemuan 1️⃣1️⃣ ➡ [Rails Study 8]
 
 ### Short Videos
-#### Short Video :one: :arrow_right: [Git Repository, Branch, Checkout, Add, Commit, Push]
-#### Short Video :two: :arrow_right: [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]
+#### Short Video 1️⃣ ➡ [Git Repository, Branch, Checkout, Add, Commit, Push]
+#### Short Video 2️⃣ ➡ [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]
 
 
 ##### Terima kasih sudah belajar bersama, jangan lupa berdo'a dulu sebelum belajar, semoga ilmunya bermanfaat!
@@ -26,6 +26,7 @@ Platform: [Progate](http://progate.com)
 
 [HTML CSS Study 1]: https://youtu.be/-SYPcpgSvfs
 [HTML CSS Study 2]: https://youtu.be/P0m_GXaIUEU
+[HTML CSS Dojo 1]: https://youtu.be/o0a6-a2CNO8
 [Ruby Study 1 & 2]: https://youtu.be/j-xPsutXW2c
 [Ruby Study 3 & 4]: https://youtu.be/AwZLflZSfe8
 [Ruby Study 5 & Rails Study 1]: https://youtu.be/7ZAVrtolRB0
