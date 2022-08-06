@@ -2,7 +2,7 @@
 Platform: Progate
 
 ### Class Videos
-#### Pertemuan :one: :arrow_right: [HTML CSS Study 1](https://youtu.be/-SYPcpgSvfs "Title")  
+#### Pertemuan :one: :arrow_right: [HTML CSS Study 1][1]  
 #### Pertemuan :two: HTML CSS Study 2 :arrow_right: https://youtu.be/P0m_GXaIUEU
 #### Pertemuan :three: HTML CSS Dojo 1 :arrow_right: https://youtu.be/o0a6-a2CNO8
 #### Pertemuan :four: Ruby 1 dan 2 :arrow_right: https://youtu.be/j-xPsutXW2c
@@ -23,3 +23,5 @@ Platform: Progate
 ##### Dan jangan malu bertanya karena bertanya adalah bagian dari belajar :thumbsup: 
 
 ##### 見てくれてありがとう！
+
+[1] https://youtu.be/-SYPcpgSvfs
