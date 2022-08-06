@@ -19,8 +19,8 @@ Platform: [Progate](http://progate.com)
 #### Short Video 2️⃣ ➡ [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]
 
 
-##### Terima kasih sudah belajar bersama, jangan lupa berdo'a dulu sebelum belajar, semoga ilmunya bermanfaat!
-##### Dan jangan malu bertanya karena bertanya adalah bagian dari belajar :thumbsup: 
+##### Terima kasih sudah belajar bersama, jangan lupa berdo'a dulu 🤲 sebelum belajar, semoga ilmunya bermanfaat!
+##### Dan jangan malu bertanya karena bertanya adalah bagian dari belajar 👍 
 
 ##### 見てくれてありがとう！
 
