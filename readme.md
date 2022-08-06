@@ -2,17 +2,17 @@
 Platform: [Progate](http://progate.com)
 
 ### Class Videos
-#### Pertemuan 1️⃣ :arrow_right: [HTML CSS Study 1]
-#### Pertemuan 2️⃣ :arrow_right: [HTML CSS Study 2]
-#### Pertemuan 3️⃣ :arrow_right: [HTML CSS Dojo 1](https://youtu.be/o0a6-a2CNO8)
-#### Pertemuan 4️⃣ :arrow_right: [Ruby Study 1 & 2]
-#### Pertemuan 5️⃣ :arrow_right: [Ruby Study 3 & 4]
-#### Pertemuan 6️⃣ :arrow_right: [Ruby Study 5 & Rails Study 1]
-#### Pertemuan 7️⃣ :arrow_right: [Rails Study 2 & 3]:
-#### Pertemuan 8️⃣ :arrow_right: [Rails Dojo 1 & Rails Study 4]
-#### Pertemuan 9️⃣ :arrow_right: [Rails Study 5 & Rails Dojo 2]
-#### Pertemuan 1️⃣0️⃣ :arrow_right: [Rails Study 6 & 7]
-#### Pertemuan 1️⃣1️⃣ :arrow_right: [Rails Study 8]
+#### Pertemuan 1️⃣ ➡ [HTML CSS Study 1]
+#### Pertemuan 2️⃣ ➡ [HTML CSS Study 2]
+#### Pertemuan 3️⃣ ➡ [HTML CSS Dojo 1](https://youtu.be/o0a6-a2CNO8)
+#### Pertemuan 4️⃣ ➡ [Ruby Study 1 & 2]
+#### Pertemuan 5️⃣ ➡ [Ruby Study 3 & 4]
+#### Pertemuan 6️⃣ ➡ [Ruby Study 5 & Rails Study 1]
+#### Pertemuan 7️⃣ ➡ [Rails Study 2 & 3]:
+#### Pertemuan 8️⃣ ➡ [Rails Dojo 1 & Rails Study 4]
+#### Pertemuan 9️⃣ ➡ [Rails Study 5 & Rails Dojo 2]
+#### Pertemuan 1️⃣0️⃣ ➡ [Rails Study 6 & 7]
+#### Pertemuan 1️⃣1️⃣ ➡ [Rails Study 8]
 
 ### Short Videos
 #### Short Video :one: :arrow_right: [Git Repository, Branch, Checkout, Add, Commit, Push]
