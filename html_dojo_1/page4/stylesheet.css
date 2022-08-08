@@ -1,0 +1,107 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Avenir Next";
+}
+
+li {
+  list-style: none;
+}
+
+/* Ketik code Anda di bawah */
+.header {
+  height:90px;
+  background-color:#26d0c9;
+  color:white;
+}
+
+.header h1 {
+  float:left;
+  font-size:36px;
+  margin: 20px 40px;
+}
+
+li {
+  float:left;
+  margin: 33px 20px;
+}
+
+.heading {
+  margin:100px 80px;
+}
+
+.heading h1 {
+  font-size:140px;
+}
+
+.heading h2 {
+  font-size:60px;
+}
+
+span {
+  color:#ff4a4a;
+}
+
+.lessons {
+  margin: 100px 80px;
+  height:500px;
+}
+
+.lesson {
+  float:left;
+  width:25%;
+}
+
+.lesson img {
+  margin-right:40px;
+  margin-bottom:30px;
+}
+
+.lessons h3 {
+  border-bottom: 2px solid #dee7ec;
+  font-size:28px;
+  padding-bottom:15px;
+  margin-bottom:50px;
+}
+
+.lesson h2 {
+  font-size:24px;
+  font-weight:normal;
+}
+
+.formulir {
+  margin: 100px 80px;
+}
+
+.formulir h3 {
+  font-size: 28px;
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.formulir h2 {
+  font-size: 18px;
+  font-weight:normal;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 400px;
+  border: 1px solid #dee7ec;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: 18px;
+  color: #889eab;
+  background-color: #dee7ec;
+}
