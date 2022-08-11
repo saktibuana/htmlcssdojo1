@@ -15,7 +15,7 @@ Platform: [Progate](http://progate.com)
 #### Pertemuan 1️⃣1️⃣ ➡ [Rails Study 8]
 #### Pertemuan 1️⃣2️⃣ ➡ [Rails Dojo 3]
 #### Pertemuan 1️⃣3️⃣ ➡ [Rails Study 9 & 10]
-#### Pertemuan 1️⃣4️⃣ ➡ [Rails Study 11]
+#### Pertemuan 1️⃣4️⃣ ➡ [Rails Study 11 & Dojo 4]
 #### Pertemuan 1️⃣5️⃣ ➡ [Rails Dojo 4]
 #### Pertemuan 1️⃣6️⃣ ➡ [Rails Tugas]
 
@@ -41,8 +41,8 @@ Platform: [Progate](http://progate.com)
 [Rails Study 6 & 7]: https://youtu.be/EGn1EIZOu70 
 [Rails Study 8]: https://youtu.be/0dZMkELXbEY
 [Rails Dojo 3]: https://www.youtube.com/watch?v=Zr9PQBjT1js&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=14
-[Rails Study 9 & 10]: https://youtu.be/0dZMkELXbEY
-[Rails Study 11]: https://youtu.be/0dZMkELXbEY
+[Rails Study 9 & 10]: https://www.youtube.com/watch?v=qWMZD7ArWx4&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=15
+[Rails Study 11 & Dojo 4]: https://youtu.be/0dZMkELXbEY
 [Rails Dojo 4]: https://www.youtube.com/watch?v=IElou_AWbHE&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=15
 [Rails Tugas]: https://www.youtube.com/watch?v=IElou_AWbHE&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=15
 
