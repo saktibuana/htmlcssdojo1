@@ -17,7 +17,7 @@ Platform: [Progate](http://progate.com)
 #### Pertemuan 1️⃣3️⃣ ➡ [Rails Study 9 & 10]
 #### Pertemuan 1️⃣4️⃣ ➡ [Rails Study 11 & Dojo 4]
 #### Pertemuan 1️⃣5️⃣ ➡ [Rails Dojo 4]
-#### Pertemuan 1️⃣6️⃣ ➡ [Rails Tugas]
+#### Pertemuan 1️⃣6️⃣ ➡ [Rails Tugas Deployment]
 
 ### Short Videos
 #### Short Video 1️⃣ ➡ [Git Repository, Branch, Checkout, Add, Commit, Push]
@@ -44,7 +44,7 @@ Platform: [Progate](http://progate.com)
 [Rails Study 9 & 10]: https://www.youtube.com/watch?v=qWMZD7ArWx4&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=15
 [Rails Study 11 & Dojo 4]: https://youtu.be/0dZMkELXbEY
 [Rails Dojo 4]: https://www.youtube.com/watch?v=IElou_AWbHE&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=15
-[Rails Tugas]: https://www.youtube.com/watch?v=IElou_AWbHE&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=15
+[Rails Tugas Deployment]: https://www.youtube.com/watch?v=UWYPybEP6EM&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=18 
 
 [Git Repository, Branch, Checkout, Add, Commit, Push]: https://youtu.be/vYORE6TU6E0
 [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]: https://youtu.be/OgxltXGV3Wk
