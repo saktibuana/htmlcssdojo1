@@ -1,0 +1,28 @@
+<div class="main users-edit">
+  <div class="container">
+    <div class="form-heading">Mengubah Akun</div>
+    <div class="form users-form">
+      <div class="form-body">
+        <!-- Tempelkan HTML untuk menampilkan pesan error-->
+        <% @user.errors.full_messages.each do |message| %>
+          <div class="form-error">
+            <%= message %>
+          </div>
+        <% end %>
+        
+        <!-- Tambahkan method form_tag untuk mengirimkan data menuju action `update` -->
+        <%= form_tag("/users/#{@user.id}/update") do %>
+          <p>Nama</p>
+          <!-- Tambahkan attribute `name` -->
+          <input name="name" value="<%= @user.name %>">
+          <p>Email</p>
+          <!-- Tambahkan attribute `name` -->
+          <input name="email" value="<%= @user.email %>">
+          <input type="submit" value="Simpan">
+        <!-- Tambahkan pernyataan `end` -->
+        <% end %>
+        
+      </div>
+    </div>
+  </div>
+</div>
