@@ -10,9 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_15_081628) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_16_151252) do
+  create_table "contestants", force: :cascade do |t|
+    t.integer "contest_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "contests", force: :cascade do |t|
     t.string "name"
+    t.string "description"
+    t.integer "maxcontestant"
+    t.boolean "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "prizes", force: :cascade do |t|
+    t.string "name"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -20,7 +37,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_15_081628) do
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "address"
-    t.string "hp"
+    t.string "gender"
+    t.integer "age"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "winners", force: :cascade do |t|
+    t.integer "contest_id"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

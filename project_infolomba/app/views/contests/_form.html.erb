@@ -17,6 +17,21 @@
   </div>
 
   <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :maxcontestant, style: "display: block" %>
+    <%= form.number_field :maxcontestant %>
+  </div>
+
+  <div>
+    <%= form.label :status, style: "display: block" %>
+    <%= form.check_box :status %>
+  </div>
+
+  <div>
     <%= form.submit %>
   </div>
 <% end %>
