@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TweetApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <!-- Tulis ulang tautan berikut ini menggunakan method `link_to` -->
+        <%=link_to("TweetApp", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li>
+        <!-- Tulis ulang tautan berikut ini menggunakan method `link_to` -->
+          <%=link_to("Tentang", "/about") %>
+        </li>
+        <li>
+          <!--Tambahkan sebuah tautan menuju `/posts/index` menggunakan method link_to -->
+          <%=link_to("Post", "/posts/index")%>
+        </li>
+      </ul>
+    </header>
+    <%= yield %>
+  </body>
+</html>
+
