@@ -3,9 +3,9 @@ Trestle.resource(:winners) do
     item :winners, icon: "fa fa-star", label:"Pemenang"
   end
 
-  collection do
-    model.includes(:contests, :users)
-  end
+  #collection do
+  #  model.includes(:contests, :users)
+  #end
   # Customize the table columns shown on the index view.
   #
   table do
