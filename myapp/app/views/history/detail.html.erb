@@ -1,0 +1,42 @@
+<div class="page-header" style="color: red;">
+    <div class="container">
+        <h1 class="title">Detail Sejarah</h1>
+    </div>
+    <div class="breadcrumb-box">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="index.html">History</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="page-section">
+    <div class="container">
+        <div class="row">
+            
+			<div class="col-md-12">
+                <div class="row">
+                     <div class="col-sm-12">
+                         <div class="post-image opacity"><h1><%= @history.title %></h1></div>
+                        <div class="post-content top-pad-20">
+                            <p><%= @history.desc %></p>
+                        </div>
+                        <div class="post-meta">
+                            <!-- Author  -->                                
+                            <span class="author"><i class="fa fa-user"></i> <%= @history.user.fullname %></span>
+                            <!-- Meta Date -->
+                            <span class="time"><i class="fa fa-calendar"></i> <%= @history.incident_date.to_fs(:long)  %></span>
+                            <!-- Comments --><br>
+                            <% if session[:id_user] != nil && @current_user.id == @history.post_by%>
+                                <%= link_to("Edit", "/history/#{@history.id}/edit", {class: "btn btn-primary"}) %>
+                            <% end %>
+                        </div>
+                    </div>      
+                </div>
+                <hr>
+			</div>
+        </div>
+    </div>
+</section>

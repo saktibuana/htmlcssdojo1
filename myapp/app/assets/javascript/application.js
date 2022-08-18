@@ -1,0 +1,12 @@
+//= require custom/jquery.min.js
+//= require custom/bootstrap.min.js
+//= require custom/hover-dropdown-menu.js
+//= require custom/jquery.hover-dropdown-menu-addon.js
+//= require custom/jquery.easing.1.3.js
+//= require custom/jquery.sticky.js
+//= require custom/bootstrapValidator.min.js
+//= require custom/jquery.appear.js
+//= require custom/effect.js
+//= require custom/jquery.parallax-1.1.3.js
+//= require custom/jquery.countTo.js
+//= require custom/custom.js

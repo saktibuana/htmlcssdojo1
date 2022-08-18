@@ -1,0 +1,71 @@
+<div class="page-header" style="color: red;">
+    <div class="container">
+        <h1 class="title">Sejarah Detik-Detik Kemerdekaan Indonesia</h1>
+    </div>
+    <div class="breadcrumb-box">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="btn-warning"><%= flash[:notice] %></p>
+                <% if @error_message %>
+                    <p class="btn-danger"><%= @error_message %></p>
+                <% end %>
+                <ul class="timeliner blog">
+                    <% @histories.each do |history| %>
+                        <% if history.id % 2 > 0 %>
+                            <li>
+                                <div class="timeline-meta">
+                                    <div class="meta_details">by <%= history.user.fullname %></div>
+                                </div>
+                                <div class="timeline-icon">
+                                    <div class="date"> 
+                                    <span><%= history.incident_date.to_fs(:short) %></span></div>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-body">
+                                        <div class="post-item">
+                                            <h2 class="post-title">
+                                                <%= link_to(history.title, "/history/#{history.id}/detail") %>
+                                            </h2>
+                                            <div class="post-content"><%= "#{history.desc[0..50]}..." %><%= link_to("Selengkapnya", "/history/#{history.id}/detail") %></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        <% else %>
+                            <li class="timeline-inverted">
+                                <div class="timeline-meta">
+                                    <div class="meta_details">by <%= history.user.fullname %></div>
+                                </div>
+                                <div class="timeline-icon">
+                                    <div class="date"> 
+                                    <span><%= history.incident_date.to_fs(:short) %></span></div>
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-body">
+                                        <div class="post-item">
+                                            <h2 class="post-title">
+                                                <%= link_to(history.title, "/history/#{history.id}/detail") %>
+                                            </h2>
+                                            <div class="post-content"><%= "#{history.desc[0..50]}..." %><%= link_to("Selengkapnya", "/history/#{history.id}/detail") %></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        <% end %>
+                    <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

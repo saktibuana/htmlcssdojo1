@@ -1,0 +1,16 @@
+current directory: c:/Users/ACER/myapp/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+C:/Ruby30-x64/bin/ruby.exe -I C:/Ruby30-x64/lib/ruby/3.0.0 -r ./siteconf20220815-328-4yepa1.rb extconf.rb
+creating Makefile
+
+current directory: c:/Users/ACER/myapp/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: c:/Users/ACER/myapp/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\=
+generating bootsnap-x64-mingw32.def
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: c:/Users/ACER/myapp/vendor/bundle/ruby/3.0.0/gems/bootsnap-1.13.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20220815-328-9s148v/bootsnap

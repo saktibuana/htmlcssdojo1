@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Myapp | Progate Task</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="keywords" content="HTML5 Template" />
+        <meta name="description" content="Mist — Multi-Purpose HTML Template" />
+        <meta name="author" content="zozothemes.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <!-- Font -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Arimo:300,400,700,400italic,700italic' />
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css' />
+        <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+        <%= javascript_include_tag "application"%>
+    </head>
+    <body>
+    <div id="page">
+        <!-- Sticky Navbar -->
+        <header id="sticker" class="sticky-navigation">
+            <!-- Sticky Menu -->
+            <div class="sticky-menu relative">
+                <!-- navbar -->
+                <div class="navbar navbar-default navbar-bg-light" role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="navbar-header">
+                                <!-- Button For Responsive toggle -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span> 
+                                <span class="icon-bar"></span></button> 
+                                <!-- Logo -->
+                                 
+                                <a class="navbar-brand" href="index.html">
+                                    <img class="site_logo" alt="Site Logo" src="<%= '/logo.png' %>" />
+                                </a></div>
+                                <!-- Navbar Collapse -->
+                                <div class="navbar-collapse collapse">
+                                    <!-- nav -->
+                                    <ul class="nav navbar-nav">
+                                        <!-- Home  Mega Menu -->
+                                        <li class="mega-menu">
+                                          <%= link_to("Home", "/") %>
+                                        </li>
+
+                                        <% if @current_user == nil %>
+                                            <li class="mega-menu">
+                                              <%= link_to("Sign Up as Admin", "/signup") %>
+                                            </li>
+                                            <li class="mega-menu">
+                                              <%= link_to("Sign In", "/login") %>
+                                            </li>
+                                        <% else %>
+                                            <li class="mega-menu">
+                                              <%= link_to("Add History", "/history/add") %>
+                                            </li>
+                                            <li class="mega-menu">
+                                              <%= link_to("Logout", "/logout") %>
+                                            </li>
+                                        <% end %>
+                                        <!-- Ends Shop Menu -->
+                                        <!-- Features Menu -->
+                                        
+                                        <!-- Ends Features Menu -->
+                                        <!-- Blog Menu -->
+                                        <!-- Blog Menu -->
+                                        <!-- Contact Block -->
+                                        
+                                        <!-- Ends Widgets Block -->
+                                        <!-- Pages Mega Menu -->
+                                        <!-- Shortcode Menu Ends -->
+                                        <!-- Search Box Block -->
+                                        <!-- Ends Search Box Block -->
+                                    </ul>
+                                    <!-- Right nav -->
+                                </div>
+                                <!-- /.navbar-collapse -->
+                            </div>
+                            <!-- /.col-md-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.container -->
+                </div>
+                <!-- navbar -->
+            </div>
+            <!-- Sticky Menu -->
+        </header>
+        <!-- Sticky Navbar -->
+        
+        <!-- page-header -->
+        <%= yield %>
+               
+        <footer id="footer">
+            <!-- footer-top -->
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <!-- Copyrights -->
+                        <div class="col-xs-10 col-sm-6 col-md-6"> &copy; Progate's Student. Ahmad Dedy Setiabudi Hamid
+                        <br />
+                        <!-- Terms Link -->
+                         
+                        <a href="#">Terms of Use</a> / 
+                        <a href="#">Privacy Policy</a></div>
+                        <div class="col-xs-2  col-sm-6 col-md-6 text-right page-scroll gray-bg icons-circle i-3x">
+                            <!-- Goto Top -->
+                            <a href="#page">
+                                <i class="glyphicon glyphicon-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+        </footer>
+        <!-- footer -->
+    </div>
+  </body>
+</html>
