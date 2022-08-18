@@ -20,7 +20,7 @@ Platform: [Progate](http://progate.com)
 #### Pertemuan 1️⃣6️⃣ ➡ [Rails Tugas Deployment]
 #### Pertemuan 1️⃣7️⃣ ➡ [Rails QnA Deployment dan Dojo 4]
 #### Pertemuan 1️⃣8️⃣ ➡ [Rails QnA Options dan Dojo 4]
-#### Pertemuan 1️⃣9️⃣ ➡ [Rails QnA Assets Sprocets]
+#### Pertemuan 1️⃣9️⃣ ➡ [Rails QnA Assets Sprockets]
 
 ### Short Videos
 #### Short Video 1️⃣ ➡ [Git Repository, Branch, Checkout, Add, Commit, Push]
@@ -50,6 +50,6 @@ Platform: [Progate](http://progate.com)
 [Rails Tugas Deployment]: https://www.youtube.com/watch?v=UWYPybEP6EM&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=18 
 [Rails QnA Deployment dan Dojo 4]: https://www.youtube.com/watch?v=0v9_zyOcblQ&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=20
 [Rails QnA Options dan Dojo 4]: https://youtu.be/4JnuNR5-GmY
-[Rails QnA Assets Sprocets]: https://www.youtube.com/watch?v=fRRws3Sezes
+[Rails QnA Assets Sprockets]: https://www.youtube.com/watch?v=fRRws3Sezes
 [Git Repository, Branch, Checkout, Add, Commit, Push]: https://youtu.be/vYORE6TU6E0
 [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]: https://youtu.be/OgxltXGV3Wk
