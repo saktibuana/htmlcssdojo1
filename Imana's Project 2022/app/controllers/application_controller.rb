@@ -7,14 +7,14 @@ class ApplicationController < ActionController::Base
   
   def authenticate_user
     if @current_user == nil
-      flash[:notice] = "You must be logged in"
+      flash[:notice] = "Anda harus masuk aplikasi"
       redirect_to("/login")
     end
   end
   
   def forbid_login_user
     if @current_user
-      flash[:notice] = "You are already logged in"
+      flash[:notice] = "Anda telah masuk aplikasi"
       redirect_to("/posts/index")
     end
   end

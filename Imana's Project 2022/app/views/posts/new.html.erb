@@ -1,7 +1,9 @@
 <div class="main posts-new">
   <div class="container">
-    <h1 class="form-heading">Create a new post</h1>
-    <%= form_tag("/posts/create") do %>
+    <h1 class="form-heading">Tambah wisdom baru</h1>
+
+    <%= form_tag("/posts/create",{multipart: true}) do %>
+
       <div class="form">
         <div class="form-body">
           <% @post.errors.full_messages.each do |message| %>
@@ -11,7 +13,12 @@
           <% end %>
           
           <textarea name="content"><%= @post.content %></textarea>
-          <input type="submit" value="Post">
+          
+          <p>Gambar</p>
+          <input name="image" type="file">
+
+
+          <input type="submit" value="Tambah">
         </div>
       </div>
     <% end %>

@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-
-  post "likes/:post_id/create" => "likes#create"
-  post "likes/:post_id/destroy" => "likes#destroy"
+# untuk di rails 7 likes menggungakan "get", jika rails 5 menggunakan "post"
+ # linkto...(all) (dipost-show.html)...jika di rails 7 method="post"nya di hapus
+  get "likes/:post_id/create" => "likes#create"
+  get "likes/:post_id/destroy" => "likes#destroy"
 
   
   get "login" => "users#login_form"

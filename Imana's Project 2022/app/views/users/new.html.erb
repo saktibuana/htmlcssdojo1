@@ -1,6 +1,6 @@
 <div class="main users-new">
   <div class="container">
-    <div class="form-heading">Sign up</div>
+    <div class="form-heading" align="center">Daftar pengguna baru</div>
     <div class="form users-form">
       <div class="form-body">
         <% @user.errors.full_messages.each do |message| %>
@@ -10,11 +10,11 @@
         <% end %>
         
         <%= form_tag("/users/create") do %>
-          <p>Name</p>
+          <p>Nama</p>
           <input name="name" value="<%= @user.name %>">
           <p>Email</p>
           <input name="email" value="<%= @user.email %>">
-          <p>Password</p>
+          <p>Kata sandi</p>
           <input type="password" name="password" value="<%= @user.password %>">
           <input type="submit" value="Sign up">
         <% end %>

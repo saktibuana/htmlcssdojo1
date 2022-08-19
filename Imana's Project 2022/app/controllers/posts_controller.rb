@@ -17,12 +17,25 @@ class PostsController < ApplicationController
   end
   
   def create
+    
+    # Time.now.utc.to_formatted_s(:number)
+    # menambah upload gambar
+    if params[:image] 
+      namafile="gambar_#{Time.now.to_i }.jpg" 
+      image = params[:image]
+      File.binwrite("public/post_images/#{namafile}", image.read)
+    else
+      namafile="gambar.jpg"
+
+    end
+    # end menambah upload gambar
     @post = Post.new(
       content: params[:content],
-      user_id: @current_user.id
+      user_id: @current_user.id,
+      gambar: namafile
     )
     if @post.save
-      flash[:notice] = "Post successfully created"
+      flash[:notice] = "Wisdom berhasil dibuat"
       redirect_to("/posts/index")
     else
       render("posts/new")
@@ -37,7 +50,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
     if @post.save
-      flash[:notice] = "Post successfully edited"
+      flash[:notice] = "Wisdom berhasil diubah"
       redirect_to("/posts/index")
     else
       render("posts/edit")
@@ -47,14 +60,14 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find_by(id: params[:id])
     @post.destroy
-    flash[:notice] = "Post successfully deleted"
+    flash[:notice] = "Wisdom berhasil dihapus"
     redirect_to("/posts/index")
   end
   
   def ensure_correct_user
     @post = Post.find_by(id: params[:id])
     if @post.user_id != @current_user.id
-      flash[:notice] = "Unauthorized access"
+      flash[:notice] = "Anda tidak memiliki ijin akses"
       redirect_to("/posts/index")
     end
   end
