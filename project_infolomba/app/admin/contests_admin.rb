@@ -17,8 +17,9 @@ Trestle.resource(:contests) do
   # Customize the form fields shown on the new/edit views.
   #
    form do |contest|
-     text_field :name
-      
+     text_field :name, label: "Nama"
+     text_field :description, label:"Diskripsi"
+     number_field :maxcontestant, label: "Max kontestan"
   #   row do
   #     col { datetime_field :updated_at }
   #     col { datetime_field :created_at }

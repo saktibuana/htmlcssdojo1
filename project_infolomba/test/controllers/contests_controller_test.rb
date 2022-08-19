@@ -17,7 +17,7 @@ class ContestsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create contest" do
     assert_difference("Contest.count") do
-      post contests_url, params: { contest: { description: @contest.description, maxcontestant: @contest.maxcontestant, name: @contest.name, status: @contest.status } }
+      post contests_url, params: { contest: { name: @contest.name } }
     end
 
     assert_redirected_to contest_url(Contest.last)
@@ -34,7 +34,7 @@ class ContestsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update contest" do
-    patch contest_url(@contest), params: { contest: { description: @contest.description, maxcontestant: @contest.maxcontestant, name: @contest.name, status: @contest.status } }
+    patch contest_url(@contest), params: { contest: { name: @contest.name } }
     assert_redirected_to contest_url(@contest)
   end
 

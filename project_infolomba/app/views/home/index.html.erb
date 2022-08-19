@@ -10,15 +10,17 @@
        <div class="lessons">
        	 <div class="lesson">
 			 <div class="lesson-icon">
+         <p>RT teraktif mengikuti Lomba</p>
+
              <%= column_chart  Contest.joins(:users).group(:address).count(:id), width: "400px", height: "400px", xtitle: "Peserta", ytitle: "Keaktifan anggota" %>
-              <p>RT teraktif mengikuti Lomba</p>
-            </div>
+                         </div>
        </div>
 
         <div class="lesson">
         	 <div class="lesson-icon">
+              <p>Lomba dengan Peserta Terbanyak</p>
 				<%= pie_chart Contest.joins(:users).group(:name).count(:id) , width: "400px", height: "400px", legend: "right" %>
-				<p>Lomba dengan Peserta Terbanyak</p>
+			
 			</div>
        </div>
   </div>

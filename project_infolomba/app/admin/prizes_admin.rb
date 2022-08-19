@@ -12,14 +12,15 @@ Trestle.resource(:prizes) do
 
   # Customize the form fields shown on the new/edit views.
   #
-  # form do |prize|
-  #   text_field :name
+   form do |prize|
+     text_field :name, label:"Nama Hadiah"
+     text_field :description, label:"Diskripsi"
   #
   #   row do
   #     col { datetime_field :updated_at }
   #     col { datetime_field :created_at }
   #   end
-  # end
+   end
 
   # By default, all parameters passed to the update and create actions will be
   # permitted. If you do not have full trust in your users, you should explicitly

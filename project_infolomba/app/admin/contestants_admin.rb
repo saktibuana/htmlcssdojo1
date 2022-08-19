@@ -6,8 +6,8 @@ Trestle.resource(:contestants) do
   # Customize the table columns shown on the index view.
   #
    table do
-     column :contest_id, header: "Nama Lomba"
-     column :user_id, header: "Nama Peserta"
+     column :contest,->(contestant){ contestant.contest.name}, header: "Nama Lomba"
+     column :user,->(contestant){contestant.user.name}, header: "Nama Peserta"
      actions
    end
 

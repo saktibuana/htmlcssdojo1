@@ -2,12 +2,6 @@
 
 one:
   name: MyString
-  description: MyString
-  maxcontestant: 1
-  status: false
 
 two:
   name: MyString
-  description: MyString
-  maxcontestant: 1
-  status: false

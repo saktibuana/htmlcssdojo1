@@ -14,10 +14,7 @@ class ContestsTest < ApplicationSystemTestCase
     visit contests_url
     click_on "New contest"
 
-    fill_in "Description", with: @contest.description
-    fill_in "Maxcontestant", with: @contest.maxcontestant
     fill_in "Name", with: @contest.name
-    check "Status" if @contest.status
     click_on "Create Contest"
 
     assert_text "Contest was successfully created"
@@ -28,10 +25,7 @@ class ContestsTest < ApplicationSystemTestCase
     visit contest_url(@contest)
     click_on "Edit this contest", match: :first
 
-    fill_in "Description", with: @contest.description
-    fill_in "Maxcontestant", with: @contest.maxcontestant
     fill_in "Name", with: @contest.name
-    check "Status" if @contest.status
     click_on "Update Contest"
 
     assert_text "Contest was successfully updated"
