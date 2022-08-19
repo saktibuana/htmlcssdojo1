@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    Dragonfruit Template 
+    http://www.templatemo.com/preview/templatemo_411_dragonfruit 
+    -->
+    <title>Kebumen Aspirasi</title>
+    <link href="/logo-kebumen.png" rel="icon">
+    <meta name="description" content="" />
+    <!-- templatemo 411 dragonfruit -->
+    <meta name="author" content="templatemo">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="./favicon.png" />		
+    <!-- Font Awesome -->
+    <link href="font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <!-- Camera -->
+    <link href="camera.css" rel="stylesheet">
+    <!-- Template  -->
+    <link href="templatemo_style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head> 
+      
+  <body>
+    
+    <div class="container_wapper">
+        <div id="templatemo_banner_menu">
+            <div class="container-fluid">
+                <div class="col-xs-4 templatemo_logo">
+                  <a href="/">
+                      
+                      <h1 id="logo_text">Kebumen<span>Aspirasi</span></h1>
+                    </a>
+                </div>
+                <div class="col-sm-8 hidden-xs">
+                    <ul class="nav nav-justified">
+                      <% if @current_user %>
+                      <li>
+                        <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+                      </li>
+                      <li>
+                        <%= link_to("Daftar Aspirasi", "/posts/index") %>
+                      </li>
+                      <li>
+                        <%= link_to("Tambah Aspirasi", "/posts/new") %>
+                      </li>
+                      <li>
+                        <%= link_to("Aspirator", "/users/index") %>
+                      </li>
+                      <li>
+                        <%= link_to("Keluar", "/logout", {method: :post}) %>
+                      </li>
+                    <% else %>
+                      <li>
+                        <%= link_to("Tentang Kami", "/about") %>
+                      </li>
+                      <li>
+                        <%= link_to("Daftar", "/signup") %>
+                      </li>
+                      <li>
+                        <%= link_to("Masuk", "/login") %>
+                      </li>
+                    <% end %>
+                    </ul>
+                </div>
+                <div class="col-xs-8 visible-xs">
+                    <a href="#" id="mobile_menu"><span class="glyphicon glyphicon-th-list"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    
+    <header>
+    </header>
+
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    
+    <%= yield %>
+    
+  </body>
+</html>
