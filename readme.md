@@ -54,6 +54,6 @@ Platform: [Progate](http://progate.com)
 [Rails QnA Options dan Dojo 4]: https://youtu.be/4JnuNR5-GmY
 [Rails QnA Assets Sprockets]: https://www.youtube.com/watch?v=fRRws3Sezes
 [Rails QnA Project Akhir]: https://www.youtube.com/watch?v=NZyZI51EZcg&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=22
-[Rails QnA Submissions]: https://www.youtube.com/watch?v=fRRws3Sezes
+[Rails QnA Submissions]: https://youtu.be/snXtIg_3OTg
 [Git Repository, Branch, Checkout, Add, Commit, Push]: https://youtu.be/vYORE6TU6E0
 [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]: https://youtu.be/OgxltXGV3Wk
