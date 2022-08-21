@@ -9,7 +9,12 @@
           <div class="post-user-name">
             <%= link_to(post.user.name, "/users/#{post.user.id}") %>
           </div>
+
+          <!-- Isi konten -->        
           <%= link_to(post.content, "/posts/#{post.id}") %>
+          
+          <label class="btn btn-danger btn-sm rounded-pill previewimk" src="redirect_to(("public/post_images/#{namafile}", image.read))">Lihat gambar</label>
+        
         </div>
       </div>
     <% end %>

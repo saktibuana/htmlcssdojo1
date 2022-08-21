@@ -1,7 +1,8 @@
 <div class="main posts-new">
   <div class="container">
-    <h1 class="form-heading">Tambah wisdom baru</h1>
+    <h1 class="form-heading" align="center">Tambah wisdom baru</h1>
 
+    <!--NOTE: menambah upload gambar => tambahkan pada form tag {multipart: true}=>(new.html/post) -->
     <%= form_tag("/posts/create",{multipart: true}) do %>
 
       <div class="form">
@@ -12,6 +13,7 @@
             </div>
           <% end %>
           
+          <p>Wisdom </p>
           <textarea name="content"><%= @post.content %></textarea>
           
           <p>Gambar</p>

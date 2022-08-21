@@ -1,6 +1,6 @@
 <div class="main users-new">
   <div class="container">
-    <div class="form-heading" align="center">Daftar pengguna baru</div>
+    <div class="form-heading" align="center">Daftar</div>
     <div class="form users-form">
       <div class="form-body">
         <% @user.errors.full_messages.each do |message| %>
@@ -16,7 +16,7 @@
           <input name="email" value="<%= @user.email %>">
           <p>Kata sandi</p>
           <input type="password" name="password" value="<%= @user.password %>">
-          <input type="submit" value="Sign up">
+          <input type="submit" value="Daftar">
         <% end %>
       </div>
     </div>

@@ -6,13 +6,13 @@
       <h2><%= @user.name %></h2>
       <p><%= @user.email %></p>
       <% if @user.id == @current_user.id %>
-        <%= link_to("Edit", "/users/#{@user.id}/edit") %>
+        <%= link_to("Ubah", "/users/#{@user.id}/edit") %>
       <% end %>
     </div>
     
     <ul class="user-tabs">
-      <li><%= link_to("Posts", "/users/#{@user.id}") %></li>
-      <li class="active"><%= link_to("Likes", "/users/#{@user.id}/likes") %></li>
+      <li><%= link_to("Wisdom", "/users/#{@user.id}") %></li>
+      <li class="active"><%= link_to("Suka", "/users/#{@user.id}/likes") %></li>
     </ul>
     
     <!-- Get each element of @likes using the each method -->

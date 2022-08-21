@@ -55,6 +55,18 @@
   object-fit: cover;
 }
 
+
+.img-fluid img {
+  /* width: 750px; */
+  width: 84%;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: 0 2px 6px #c1ced7;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+
 .posts-show-item .post-user-name a {
   vertical-align: middle;
   font-size: 24px;

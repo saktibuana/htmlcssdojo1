@@ -5,13 +5,13 @@
       <h2><%= @user.name %></h2>
       <p><%= @user.email %></p>
       <% if @user.id == @current_user.id %>
-        <%= link_to("Edit", "/users/#{@user.id}/edit") %>
+        <%= link_to("Ubah", "/users/#{@user.id}/edit") %>
       <% end %>
     </div>
     
     <ul class="user-tabs">
-      <li class="active"><%= link_to("Post", "/users/#{@user.id}") %></li>
-      <li><%= link_to("Like", "/users/#{@user.id}/likes") %></li>
+      <li class="active"><%= link_to("Wisdom", "/users/#{@user.id}") %></li>
+      <li><%= link_to("Suka", "/users/#{@user.id}/likes") %></li>
     </ul>
     
     <% @user.posts.each do |post| %>

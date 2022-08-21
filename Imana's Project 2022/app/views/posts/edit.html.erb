@@ -1,6 +1,6 @@
 <div class="main posts-new">
   <div class="container">
-    <h1 class="form-heading">Edit a post</h1>
+    <h1 class="form-heading" align="center">Ubah wisdom</h1>
     <%= form_tag("/posts/#{@post.id}/update") do %>
       <div class="form">
         <div class="form-body">
@@ -9,8 +9,17 @@
               <%= message %>
             </div>
           <% end %>
+
+          <p>Wisdom baru</p>
           <textarea name="content"><%= @post.content %></textarea>
-          <input type="submit" value="Save">
+
+
+          <!--ubah gambar-->
+          <p>Gambar</p>
+          <input name="image" type="file">
+
+
+          <input type="submit" value="Simpan">
         </div>
       </div>
     <% end %>

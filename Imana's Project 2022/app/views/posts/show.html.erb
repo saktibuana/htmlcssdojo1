@@ -5,17 +5,28 @@
         <img src="<%= "/user_images/#{@user.image_name}" %>">
         <%= link_to(@user.name, "/users/#{@user.id}") %>
       </div>
-      <p>
+      <p class="previewimk">
         <%= @post.content %>
       </p>
+     
+<!--NOTE: menambah tampilan gambar untuk inputan wisdom =>  <img src="<%= "/post_images/#{@post.gambar}" %>"> -->
+<!--NOTE: keterangan=> {@post.namavariabel} pada (show.html/post) -->
 
-      <img src="<%= "/post_images/#{@post.gambar}" %>">
 
+      <div class="img-fluid">
+      <img  src="<%= "/post_images/#{@post.gambar}" %>">
+      </div>
       <div class="post-time">
         <%= @post.created_at %>
       </div>
+
+  
       <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
-        <%= link_to("/likes/#{@post.id}/destroy") do %>
+     
+      <!--NOTE:untuk di rails 7 likes menggungakan "get", jika rails 5 menggunakan "post"-->
+      <!--NOTE linkto...(all) (dipost-show.html)...jika di rails 7 method="post"nya di hapus -->
+      
+      <%= link_to("/likes/#{@post.id}/destroy") do %>
           <span class="fa fa-heart like-btn-unlike"></span>
         <% end %>
       <% else %>
@@ -26,8 +37,8 @@
       
       <% if @post.user_id == @current_user.id %>
         <div class="post-menus">
-          <%= link_to("Edit", "/posts/#{@post.id}/edit") %>
-          <%= link_to("Delete", "/posts/#{@post.id}/destroy") %>
+          <%= link_to("Ubah", "/posts/#{@post.id}/edit") %>
+          <%= link_to("Hapus", "/posts/#{@post.id}/destroy") %>
         </div>
       <% end %>
     </div>

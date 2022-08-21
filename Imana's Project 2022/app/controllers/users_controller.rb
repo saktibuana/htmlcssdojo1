@@ -24,7 +24,7 @@ class UsersController < ApplicationController
     )
     if @user.save
       session[:user_id] = @user.id
-      flash[:notice] = "You have signed up successfully"
+      flash[:notice] = "Anda berhasil mendaftar"
       redirect_to("/users/#{@user.id}")
     else
       render("users/new")
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
     end
     
     if @user.save
-      flash[:notice] = "Your account has been updated successfully"
+      flash[:notice] = "Akun anda berhasil di perbarui"
       redirect_to("/users/#{@user.id}")
     else
       render("users/edit")
@@ -63,10 +63,10 @@ class UsersController < ApplicationController
     # Rewrite the if statement using && and the "authenticate" method
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
-      flash[:notice] = "You have logged in successfully"
+      flash[:notice] = "Anda berhasil masuk"
       redirect_to("/posts/index")
     else
-      @error_message = "Invalid email/password combination"
+      @error_message = "Email salah/kombinasi kata sandi salah"
       @email = params[:email]
       @password = params[:password]
       render("users/login_form")
@@ -75,7 +75,7 @@ class UsersController < ApplicationController
   
   def logout
     session[:user_id] = nil
-    flash[:notice] = "You have logged out successfully"
+    flash[:notice] = "Anda berhasil keluar"
     redirect_to("/login")
   end
   
@@ -86,7 +86,7 @@ class UsersController < ApplicationController
   
   def ensure_correct_user
     if @current_user.id != params[:id].to_i
-      flash[:notice] = "Unauthorized access"
+      flash[:notice] = "Anda tidak memiliki ijin akses"
       redirect_to("/posts/index")
     end
   end

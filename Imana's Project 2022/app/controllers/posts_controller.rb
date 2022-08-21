@@ -25,10 +25,11 @@ class PostsController < ApplicationController
       image = params[:image]
       File.binwrite("public/post_images/#{namafile}", image.read)
     else
-      namafile="gambar.jpg"
+      namafile="wisdom.jpg"
 
     end
     # end menambah upload gambar
+    
     @post = Post.new(
       content: params[:content],
       user_id: @current_user.id,
@@ -49,6 +50,19 @@ class PostsController < ApplicationController
   def update
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
+    @post.gambar = params[:image]
+    
+    # update gambar
+    # if params[:image]
+    #   # namafile="gambar_#{Time.now.to_i }.jpg" 
+    #   @post.gambar = "#{@post.gambar}.jpg"
+    #   image = params[:image]
+    #   File.binwrite("public/post_images/#{post.user.gambar}", image.read)
+     
+    # end 
+
+   # end update gambar
+
     if @post.save
       flash[:notice] = "Wisdom berhasil diubah"
       redirect_to("/posts/index")
