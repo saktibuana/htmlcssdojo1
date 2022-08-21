@@ -21,11 +21,14 @@
                     <p class="btn-danger"><%= @error_message %></p>
                 <% end %>
                 <ul class="timeliner blog">
-                    <% @histories.each do |history| %>
-                        <% if history.id % 2 > 0 %>
+                    <% 
+                        no = 1
+                        @histories.each do |history| 
+                    %>
+                        <% if no % 2 > 0 %>
                             <li>
                                 <div class="timeline-meta">
-                                    <div class="meta_details">by <%= history.user.fullname %></div>
+                                    <div class="meta_details"> by <%= history.user.fullname %></div>
                                 </div>
                                 <div class="timeline-icon">
                                     <div class="date"> 
@@ -63,7 +66,10 @@
                                 </div>
                             </li>
                         <% end %>
-                    <% end %>
+                    <% 
+                        no += 1
+                        end 
+                    %>
                 </ul>
             </div>
         </div>
