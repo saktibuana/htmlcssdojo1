@@ -1,0 +1,22 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">Utarakan Aspirasi</h1>
+    <%= form_tag("/posts/create", {multipart: true}) do %>
+      <div class="form">
+        <div class="form-body">
+          <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+          <% end %>
+          <p>Aspirasi</p>
+          <textarea name="content"><%= @post.content %></textarea>
+          <p>Foto</p>
+          <input name="post_image" type="file">
+          <input type="submit" value="Buat">
+        </div>
+      </div>
+    <% end %>
+    <p class="form-footer">Copyright &copy; 2022 Kebumen Aspirasi</p>
+  </div>
+</div>
