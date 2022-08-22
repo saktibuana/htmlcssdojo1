@@ -155,10 +155,10 @@ header {
 /* About ================================ */
 .about-main {
   padding: 180px 8% 0;
-  color: rgb(222, 48, 48);
+  color: rgba(234, 71, 17, 0.966);
   background-image: url('smoke-red.jpg');
   background-repeat: no-repeat;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .about-main h2 {
@@ -262,5 +262,4 @@ footer {
   background-repeat:no-repeat;
   background-size: cover;
   font-size: 10px;
-
 }
