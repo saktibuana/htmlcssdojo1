@@ -23,7 +23,7 @@ Platform: [Progate](http://progate.com)
 #### Pertemuan 1️⃣9️⃣ ➡ [Rails QnA Assets Sprockets]
 #### Pertemuan 2️⃣0️⃣ ➡ [Rails QnA Project Akhir]
 #### Pertemuan 2️⃣1️⃣ ➡ [Rails QnA Submissions]
-
+#### Pertemuan 2️⃣2️⃣ ➡ [Rails QnA Final Projects]
 ### Short Videos
 #### Short Video 1️⃣ ➡ [Git Repository, Branch, Checkout, Add, Commit, Push]
 #### Short Video 2️⃣ ➡ [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]
@@ -55,5 +55,6 @@ Platform: [Progate](http://progate.com)
 [Rails QnA Assets Sprockets]: https://www.youtube.com/watch?v=fRRws3Sezes
 [Rails QnA Project Akhir]: https://www.youtube.com/watch?v=NZyZI51EZcg&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=22
 [Rails QnA Submissions]: https://youtu.be/snXtIg_3OTg
+[Rails QnA Final Projects]: https://www.youtube.com/watch?v=qGK2qtQzZQI
 [Git Repository, Branch, Checkout, Add, Commit, Push]: https://youtu.be/vYORE6TU6E0
 [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]: https://youtu.be/OgxltXGV3Wk
