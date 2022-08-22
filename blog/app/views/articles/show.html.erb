@@ -1,0 +1,28 @@
+<div class="mt-2 card">
+  <div class="card-header">
+    Detail
+  </div>
+  <div class="card-body">
+    <h5 class="card-title"><%= @article.title %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">Created at: <%= @article.created_at %>e</h6>
+    <p class="card-text"><%= @article.body %></p>
+    <%= link_to "Edit", edit_article_path(@article), class: "btn btn-primary" %>
+    <%= link_to "Destroy", article_path(@article), class: "btn btn-danger", data: {
+      turbo_method: :delete,
+      turbo_confirm: "Are you sure?"
+    } %>
+  </div>
+</div>
+
+<div class="mt-2 card">
+  <div class="card-header">
+    Comments
+  </div>
+  <div class="card-body">
+    <ul class="list-group">
+      <%= render @article.comments %>
+    <ul class="list-group">
+  </div>
+</div>
+
+<%= render 'comments/form' %>

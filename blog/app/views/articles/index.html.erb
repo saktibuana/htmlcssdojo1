@@ -1,0 +1,24 @@
+<div class="my-2 float-end"><%= link_to "New Article", new_article_path, class: "btn btn-primary" %></div>
+<h1>Articles</h1>
+
+<h2>Our blog has <%= Article.public_count %> articles and counting! </h2>
+
+<div class="accordion" id="accordionExample">
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="heading<%= article.id %>">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<%= article.id %>" aria-expanded="true" aria-controls="collapseOne">
+            <%= article.title %>
+          </button>
+        </h2>
+        <div id="collapse<%= article.id %>" class="accordion-collapse collapse show" aria-labelledby="heading<%= article.id %>" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <%= truncate(article.body, :length => 500, :separator => ' ... ') %>
+            <span><%= link_to "See more", "/articles/#{article.id}" %></span>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>

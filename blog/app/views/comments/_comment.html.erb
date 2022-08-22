@@ -1,0 +1,11 @@
+<li class="list-group-item">
+  <blockquote class="blockquote mb-0">
+    <p><%= comment.body %></p>
+    <footer class="blockquote-footer"><%= comment.commenter %></cite></footer>
+  </blockquote>
+  <%= link_to "Destroy Comment", [comment.article, comment], class: "btn btn-secondary", data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %>
+</li>
+

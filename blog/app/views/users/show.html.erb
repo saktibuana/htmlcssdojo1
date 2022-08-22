@@ -1,0 +1,12 @@
+<div class="card my-3 " style="width:300px; margin:0 auto;">
+  <img src="/user_images/<%= @user.id %>.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title"><%= @user.name %></h5>
+    <p class="card-text"><%= @user.email %></p>
+    <p class="card-text"><small class="text-muted">Last updated <%= @user.updated_at %></small></p>
+    <a href="/users/<%= @user.id %>/edit" class="btn btn-primary">Edit</a>
+    <%= form_tag("/users/#{@user.id}/destroy") do %>
+        <input type="submit" value="Delete" class="my-2 btn btn-danger">
+    <% end %>
+  </div>
+</div>

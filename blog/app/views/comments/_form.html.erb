@@ -1,0 +1,26 @@
+<div class="my-2 card" style="width:300px; margin: 0 auto">
+  <div class="card-header">
+    Add a new comment:
+  </div>
+
+  <div class="card-body">
+    <%= form_with model: [ @article, @article.comments.build ] do |form| %>
+      <div>
+        <%= form.label :commenter %><br>
+        <%= form.text_field :commenter, class: 'form-control' %>
+      </div>
+      <div>
+        <%= form.label :body %><br>
+        <%= form.text_area :body, class: "form-control" %>
+      </div>
+      <div>
+        <%= form.label :status %><br>
+        <%= form.select :status, ['public', 'private', 'archived'], selected: 'public' %>
+      </div>
+      <div>
+        <input type="submit" class="my-2 btn btn-success" value="Create Comment">
+      </div>
+    <% end %>
+  </div>
+</div>
+  
