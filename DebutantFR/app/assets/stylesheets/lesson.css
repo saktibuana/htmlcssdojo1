@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ 
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.lesson-title-menu {
+    position: relative;
+    background-image: url(paris_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.lessson-title {
+    top: 50%;
+    padding-top: 180px;
+    font-size: 28px;
+    text-align: center;
+    color: #2D4059;
+    font-family: 'Bungee Shade', cursive;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.lesson-subtitle {
+    margin: auto;
+    top: 65%;
+    left: 50%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding-top: 20px 30px;
+    line-height: 1.5;
+}
+
+.accordion-item {
+  background-color: #fff;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px 5px rgba(45, 64, 89, 15);
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  column-gap: 5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-top: 1px solid;
+  border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+.lesson-content-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+    color: #252525;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.acordion-item-title{
+    font-family: 'Bungee Shade', cursive;
+    line-height: 2;
+    text-transform: uppercase;
+    font-size: 24px!important;
+    color: #2D4059;
+}
+
+.lesson-video {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+
+  .lesson-video {
+    width: 300px;
+    height: 180px;
+  }
+
+  .acordion-item-title{
+    line-height: 1.2;
+  }
+}

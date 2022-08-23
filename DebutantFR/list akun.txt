@@ -1,0 +1,5 @@
+list password dummy
+user1 >>> Dummy >>> dummy@dummy.com >>> dummy111
+user3 >>>  Dummy New >>> dummy-new@dummy.com >>> dummy222
+user4 >>> Dummy New 1 >>> dummy-new1@dummy.com >>> hahahihi
+user 5 >>> Dummy New 2 >>> dummy-new2@dummy.com >>> hihihaha

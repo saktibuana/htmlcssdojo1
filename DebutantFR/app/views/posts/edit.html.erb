@@ -1,0 +1,28 @@
+<div class="post_header"> 
+    <ul class="post_header_minimenu">
+        <li>
+          <%= link_to("Semua Pertanyaan", "/posts") %>
+        </li>
+        <li>
+          <%= link_to("Ajukan Pertanyaan", "/posts/new") %>
+        </li>
+      </ul>
+</div>
+<div class="area post_new">
+  <div class="post_new_container">
+    <h1 class="form-heading">Ubah Pertanyaan Anda</h1>
+    <%= form_tag("/posts/#{@post.id}/update") do %>
+      <div class="form">
+        <div class="form-body">
+          <% @post.errors.full_messages.each do |message| %>
+            <div class="form-error">
+              <%= message %>
+            </div>
+          <% end %>
+          <textarea name="content"><%= @post.content %></textarea>
+          <input type="submit" value="Simpan">
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjectRBY3</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media:"all", "data-turbo-track": "reload" %>
+    <meta charset="utf-8">
+    <link href="pakdemiclogo.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+
+    <body id="body-pd">
+        <header class="header" id="header">
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+            <div class="header_userid">
+                <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
+            </div>
+            <div class="header__img">
+                <img src="iconpademic.png" alt="">
+            </div>
+        </header>
+
+
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav">
+                <% if @current_user %>
+                <div>
+                    <a class="nav__logo">
+                        <i class='bx bxs-pen nav__logo-icon'></i>
+                        <span class="nav__logo-name">DébutantFR</span> 
+                    </a>
+                    <div class="nav__list">
+                        <a href="/beranda" class="nav__link">
+                        <i class='bx bx-home nav__icon' ></i>
+                            <span class="nav__name">Beranda</span>
+                        </a>
+
+                        <a href="/lesson" class="nav__link">
+                            <i class='bx bx-book nav__icon' ></i>
+                            <span class="nav__name">Pembelajaran</span>
+                        </a>
+                        <a href="/posts" class="nav__link">
+                            <i class='bx bx-message-dots nav__icon' ></i>
+                            <span class="nav__name">Diskusi</span>
+                        </a>
+                        <a href="/tentang" class="nav__link">
+                            <i class='bx bxs-contact nav__icon' ></i>
+                            <span class="nav__name">Tentang Kami</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="/logout" class="nav__link">
+                    <i class='bx bx-log-out nav__icon'></i>
+                    <span class="nav__name">Keluar</span>
+                </a>
+                <% end %>
+            </nav>
+        </div>
+
+        <% if flash[:notice] %>
+            <div class="flash">
+                 <%= flash[:notice] %>
+            </div>
+        <% end %>
+        
+        <script type="text/javascript">
+          const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+          const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.getElementById(bodyId),
+            headerpd = document.getElementById(headerId)
+
+          // Validate that all variables exist
+            if(toggle && nav && bodypd && headerpd){
+              toggle.addEventListener('click', ()=>{
+          // show navbar
+              nav.classList.toggle('show')
+          // change icon
+              toggle.classList.toggle('bx-x')
+          // add padding to body
+              bodypd.classList.toggle('body-pd')
+          // add padding to header
+              headerpd.classList.toggle('body-pd')
+              })
+            }
+          }
+
+          showNavbar('header-toggle','nav-bar','body-pd','header')
+
+          /*===== LINK ACTIVE  =====*/ 
+          const linkColor = document.querySelectorAll('.nav__link')
+
+          function colorLink(){
+            if(linkColor){
+                linkColor.forEach(l=> l.classList.remove('active'))
+                this.classList.add('active')
+                }
+            }
+          linkColor.forEach(l=> l.addEventListener('click', colorLink))
+        </script>
+        
+    <%= yield %>
+  </body>
+</html>

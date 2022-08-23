@@ -1,0 +1,84 @@
+<div class="lesson-title-menu">
+  <div class="lessson-title">
+    <h1>Les Cours</br>Pour Vous</h1>
+    <h5 class="lesson-subtitle">Êtes-vous prêt?</h5>
+  </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+        <h2 class="acordion-item-title">Étape 1: Faisons Connaissances</h2>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="lesson-content-text">
+            Pada pembelajaran pertama, kita akan membahas pokok penting dalam bertegur sapa dengan para frankofon, terutama dalam bertukar salam dan saling perkenalan diri. Mari kita simak video berikut ini!
+        </div>
+        <iframe class="lesson-video" src="https://drive.google.com/file/d/1k2fpukQ_DpgLobMDetjf6lI0WQ8Vw_3N/preview" width="640" height="360" allow="autoplay"></iframe>
+        <div class="lesson-content-text">
+            Jika masih ada materi yang belum dipahami, diskuskan dengan gurumu di kelas! Kalian juga dapat mengajukan pertanyaan melalui menu diskusi pada situs ini.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+        <h2 class="acordion-item-title">Étape 2: Fans de musique</h2>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="lesson-content-text">
+            Pada pembelajaran kedua, kita akan membahas tentang ekspresi-ekspri yang biasa ditemukan dalam percakapan sehari-hari, salah satunya adalah ekspresi kegemaran. Kegemaran atau kesukaan pada dasarnya merupakan bentuk ekspresi subjektif, dengan demikian tentu ungkapan yang diutarakan akan sangat terikat dengan preferensi masing-masing. Untuk lebih jelasnya, mari kita tonton video berikut ini!
+        </div>
+        <iframe class="lesson-video" src="https://drive.google.com/file/d/1y8YYkc0wgwfP2mk5GMwDOOHgHRH7UWbq/preview" width="640" height="360" allow="autoplay"></iframe>
+        <div class="lesson-content-text">
+            Jika masih ada materi yang belum dipahami, diskuskan dengan gurumu di kelas! Kalian juga dapat mengajukan pertanyaan melalui menu diskusi pada situs ini.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+        <h2 class="acordion-item-title">Étape 3: Nous somme frères</h2>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="lesson-content-text">
+            Pada pembelajaran ketiga, kita akan membahas tentang identitas diri. Identitas diri merupakan salah satu hal yang penting untuk dapat pahami terutama saat kalian pergi dan berinteraksi dengan orang asing. Seperti halnya kartu identitas, pada pembelajaran kali ini kita akan membahas poin-poin penting tentang identitas diri dalam bahasa Prancis. Mari kita simak video berikut ini!
+        </div>
+        <iframe class="lesson-video" src="https://drive.google.com/file/d/1fC77qBVWnCN5qeabgKPJQcKvvtLQYaJy/preview" width="640" height="360" allow="autoplay"></iframe>
+        <div class="lesson-content-text">
+            Jika masih ada materi yang belum dipahami, diskuskan dengan gurumu di kelas! Kalian juga dapat mengajukan pertanyaan melalui menu diskusi pada situs ini.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ 
+<script type="text/javascript">
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", event => {
+    
+    // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
+    
+    // const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+    // if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+    //   currentlyActiveAccordionItemHeader.classList.toggle("active");
+    //   currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+    // }
+
+    accordionItemHeader.classList.toggle("active");
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
+    if(accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    }
+    else {
+      accordionItemBody.style.maxHeight = 0;
+    }
+    
+  });
+});
+</script>

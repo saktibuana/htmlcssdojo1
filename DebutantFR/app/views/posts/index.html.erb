@@ -1,0 +1,22 @@
+<div class="post_header"> 
+    <ul class="post_header_minimenu">
+        <li>
+          <%= link_to("Semua Pertanyaan", "/posts") %>
+        </li>
+        <li>
+          <%= link_to("Ajukan Pertanyaan", "/posts/new") %>
+        </li>
+      </ul>
+</div>
+<div class="main posts_index">
+    <!----- All posts render here ----->
+    <div class="post_container">
+        <!----- All post styling ---->
+        <% @post.each do |post|%>
+        <div class="post_user">
+            <!----Each user post here---->
+            <%= link_to(post.content, "/posts/#{post.id}") %>
+        </div>
+        <% end %>
+    </div>
+</div> 
