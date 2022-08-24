@@ -1,0 +1,20 @@
+<main>
+        <aside>
+            <h3>JADWAL</h3>
+            <h4>Pendaftaran</h4>
+            <p>1 Agustus - 16 Agustus 2022</p>
+            <h4>Kegiatan Lomba</h4>
+            <p>15 Agustus - 17 Agustus 2022</p>
+            <h4>Pembagian Hadiah</h4>
+            <p>24 Agustus 2022</p>
+        </aside>
+        <div class="container">
+        <% @articles.each do |article| %>
+            <section>
+                <h3><%= article.title%></h3>
+                <p><%= article.summary%></p>
+                <%= link_to("BACA SELENGKAPNYA", "/article/#{article.id}") %>
+            </section>
+        <% end %>
+        </div>
+</main>

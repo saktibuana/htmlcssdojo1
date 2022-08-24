@@ -1,0 +1,29 @@
+<main>
+        <aside>
+            <h3>JADWAL</h3>
+            <h4>Pendaftaran</h4>
+            <p>1 Agustus - 16 Agustus 2022</p>
+            <h4>Kegiatan Lomba</h4>
+            <p>15 Agustus - 17 Agustus 2022</p>
+            <h4>Pembagian Hadiah</h4>
+            <p>24 Agustus 2022</p>
+        </aside>
+        <div class="container">
+        
+            <%= form_tag("/home/create") do %>
+            <form>
+                <% if flash[:notice] %>
+                    <div class="flash">
+                        <%= flash[:notice] %>
+                    </div>
+                <% end %>
+                    <p>Nama</p>
+                    <input type="text" name="name">
+
+                    <p>Usia</p>
+                    <input type="text" name="age">
+                    <div  class="button-register"><input type="submit" value="DAFTAR"></div>
+            </form>
+            <% end %>
+        </div>
+</main>

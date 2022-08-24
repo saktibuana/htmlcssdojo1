@@ -1,0 +1,79 @@
+main {
+    display: flex;
+}
+
+aside {
+    flex: 1;
+    padding-left: 120px;
+    padding-right: 60px;
+    margin-right: 60px;
+    border-right: 1px solid #ccc;
+}
+
+aside > h3 {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+aside > h4 {
+    font-family: 'Inter';
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+aside > p {
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.container {
+    flex: 3;
+    padding-right: 120px;
+    padding-left: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container > section {
+    height: 150px;
+    flex: 1;
+    font-family: "Inter";
+    padding: 16px;
+}
+
+.container section h3 {
+    margin-bottom: 16px
+}
+
+.container section p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    height: 40px;
+    width: 900px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.container section a {
+    float: right;
+    text-decoration: none;
+}
+
+.container > h2 {
+    font-family: 'Inter';
+    margin-bottom: 30px;
+}
+
+.container > p {
+    font-family: 'Inter';
+    font-size: 18px;
+    line-height: 36px;
+    text-align: justify;
+}

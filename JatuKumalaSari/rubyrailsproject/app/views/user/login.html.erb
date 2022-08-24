@@ -1,0 +1,23 @@
+<%= form_tag("/login") do %>
+<div class="user">
+    <h2>LOGIN</h2>
+
+    <% if @error_message %>
+        <div class="form-error">
+            <%= @error_message %>
+        </div>
+    <% end %>
+    
+    <section>
+        <p>Email</p>
+        <input type="text" name="email" value="<%= @email %>">
+    </section>
+
+    <section>
+        <p>Password</p>
+        <input type="password" name="password" value="<%= @password %>">
+    </section>
+
+    <input class="button-user" type="submit" value="LOGIN">
+</div>
+<% end %>

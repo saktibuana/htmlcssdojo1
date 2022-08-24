@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MerdekaApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">LOMBA</div>
+        <nav>
+          <ul>
+          <% if session[:user_id] %>
+            <li> <%= link_to("HOME", "/") %> </li>
+            <li> <%= link_to("PESERTA", "/contestant") %> </li>
+            <li> <%= link_to("ARTIKEL", "/article") %> </li>
+            <li> <%= link_to("LOG OUT", "/logout", {method: :post}) %> </li>
+            <li> Hi, <%= link_to(@current_user.name, "user/#{@current_user.id}") %> </li>
+          <% else %>
+            <li> <%= link_to("HOME", "/") %> </li>
+            <li> <%= link_to("PESERTA", "/contestant") %> </li>
+            <li> <%= link_to("ARTIKEL", "/article") %> </li>
+            <li> <%= link_to("SIGN UP", "/signup") %> </li>
+          <% end %>
+          </ul>
+        </nav>
+    </header>
+
+    <%= yield %>
+
+  <footer>Copyright@2022</footer>
+  </body>
+</html>
