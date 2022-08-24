@@ -24,6 +24,9 @@ Platform: [Progate](http://progate.com)
 #### Pertemuan 2️⃣0️⃣ ➡ [Rails QnA Project Akhir]
 #### Pertemuan 2️⃣1️⃣ ➡ [Rails QnA Submissions]
 #### Pertemuan 2️⃣2️⃣ ➡ [Rails QnA Final Projects]
+#### Pertemuan 2️⃣3️⃣ ➡ [Rails QnA Before Final Day]
+#### Pertemuan 2️⃣4️⃣ ➡ [Rails QnA Final Day]
+
 ### Short Videos
 #### Short Video 1️⃣ ➡ [Git Repository, Branch, Checkout, Add, Commit, Push]
 #### Short Video 2️⃣ ➡ [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]
@@ -56,5 +59,7 @@ Platform: [Progate](http://progate.com)
 [Rails QnA Project Akhir]: https://www.youtube.com/watch?v=NZyZI51EZcg&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=22
 [Rails QnA Submissions]: https://youtu.be/snXtIg_3OTg
 [Rails QnA Final Projects]: https://www.youtube.com/watch?v=qGK2qtQzZQI
+[Rails QnA Before Final Day]: https://www.youtube.com/watch?v=wC374QMBFYk&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=28
+[Rails QnA Final Day]: https://www.youtube.com/watch?v=wC374QMBFYk&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=28
 [Git Repository, Branch, Checkout, Add, Commit, Push]: https://youtu.be/vYORE6TU6E0
 [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]: https://youtu.be/OgxltXGV3Wk
