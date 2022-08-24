@@ -60,6 +60,6 @@ Platform: [Progate](http://progate.com)
 [Rails QnA Submissions]: https://youtu.be/snXtIg_3OTg
 [Rails QnA Final Projects]: https://www.youtube.com/watch?v=qGK2qtQzZQI
 [Rails QnA Before Final Day]: https://www.youtube.com/watch?v=wC374QMBFYk&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=28
-[Rails QnA Final Day]: https://www.youtube.com/watch?v=wC374QMBFYk&list=PL1jUPHKGwikXUj6P_FztPNVeRKF-FxMUJ&index=28
+[Rails QnA Final Day]: https://www.youtube.com/watch?v=NapuxdeW6H8
 [Git Repository, Branch, Checkout, Add, Commit, Push]: https://youtu.be/vYORE6TU6E0
 [How to Install URU (Unleash Ruby) the Ruby Manager on Windows]: https://youtu.be/OgxltXGV3Wk
