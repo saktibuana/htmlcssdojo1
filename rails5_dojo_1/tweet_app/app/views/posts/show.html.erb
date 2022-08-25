@@ -1,0 +1,25 @@
+<header>
+      <div class="header-logo">
+         <a href="/">TweetApp</a>
+      </div>
+      <ul class="header-menus">
+        <li>
+          <a href="/posts/index">Post</a>
+        </li>
+        <li>
+          <a href="/about">Tentang</a>
+        </li>
+      </ul>
+    </header>
+<div class="main posts-show">
+  <div class="container">
+    <div class="posts-show-item">
+      <p>
+        <%= @id.content %>
+      </p>
+      <div class="post-time">
+        <%= @id.created_at %>
+      </div>
+    </div>
+  </div>
+</div>
