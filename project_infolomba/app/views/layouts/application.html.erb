@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Info lomba</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application" %>
+  </head>
+  <body>
+    <header>
+    <div class="container">
+      <div class="header-left">
+        <!-- Tulis ulang tautan berikut ini menggunakan method `link_to` -->
+       <a href="/"><img class ="logo" src="/main_logo.png" />
+      </div>
+      <div class="header-right">
+             <%= link_to("Admin","/admin")%>
+      </div>
+      <div class="header-right">
+             <%= link_to("Tentang","/about")%>
+      </div>
+    </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>Ayo Ikut Lomba !</h1>
+        <h1>Pulih Lebih Cepat, Bangkit Lebih Kuat</h1>
+       </div>
+      </div>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

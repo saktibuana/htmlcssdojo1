@@ -1,0 +1,30 @@
+<div class="lesson-wrapper">
+  <div class="container">
+    <div class="heading">
+          <h2>Dashboard Lomba RT</h2>
+           <p>Klasmen Liga RT </p>
+           <%= bar_chart User.joins(:winners).group(:address).count(:id).sort_by {|h,v| v}.reverse, width: "800px", height: "600px" , xtitle: "Jumlah lomba yang dimenangkan", ytitle: "Peserta", label: "Jumlah Pemenang"  %>  
+
+    </div>
+
+       <div class="lessons">
+       	 <div class="lesson">
+			 <div class="lesson-icon">
+         <p>RT teraktif mengikuti Lomba</p>
+
+             <%= column_chart  Contest.joins(:users).group(:address).count(:id), width: "400px", height: "400px", xtitle: "Peserta", ytitle: "Keaktifan anggota" %>
+                         </div>
+       </div>
+
+        <div class="lesson">
+        	 <div class="lesson-icon">
+              <p>Lomba dengan Peserta Terbanyak</p>
+				<%= pie_chart Contest.joins(:users).group(:name).count(:id) , width: "400px", height: "400px", legend: "right" %>
+			
+			</div>
+       </div>
+  </div>
+</div>
+
+        	
+
